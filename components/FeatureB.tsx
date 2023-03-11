@@ -9,9 +9,9 @@ type Props = {
 
 
 
-export default function Feature({title, text}: Props) {
+export default function FeatureB({title, text}: Props) {
   return (
-    <div className='flex-[1] flex flex-col lg:flex-row lg:justify-between m-2'>
+    <div className='flex-[1] flex flex-col m-2'>
       <h1 className='my-2 flex-[1] text-lg lg:text-xl text-white italic text-extrabold'>
           {title}
       </h1>

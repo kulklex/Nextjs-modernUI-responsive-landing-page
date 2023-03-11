@@ -18,7 +18,9 @@ export default function Header({}: Props) {
 
         <div className="w-full my-3 flex flex-row">
           <input type="email" placeholder=" Your Email Address" className='flex-[2] w-full min-h-[50px] font-medium border-solid border-2 border-[#031B34] bg-[#031B34] outline-none text-[#fff] font-serif'/>
-          <button type="button" className='flex-[0.6] w-full bg-[#FF4820] text-[#fff] min-h-[50px] py-0 px-2 font-normal rounded-md outline-none'>Get Started</button>
+          <button type="button" className='flex-[1] lg:flex-[0.6] w-full bg-[#FF4820] text-[#fff] min-h-[50px] py-0 px-1 lg:px-2 font-normal rounded-md outline-none'>
+            Get Started
+          </button>
         </div>
 
         <div className='w-full flex justify-start items-center flex-col md:flex-row mt-6'>

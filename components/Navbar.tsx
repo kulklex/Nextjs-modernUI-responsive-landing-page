@@ -11,24 +11,24 @@ export default function Navbar() {
   return (
     <div className='flex justify-between items-center p-4 lg:py-8 lg:px-24'>
       <div className='md:flex-[1] flex'>
-        <div className='hidden mr-8 md:flex md:items-center md:justify-start'>
+        <Link href='/' className='hidden mr-8 md:flex md:items-center md:justify-start'>
           <Image src={logo} alt="logo" className='w-16 h-4' />
-        </div>
+        </Link>
         <div className='flex flex-row justify-center'>
           <p className='text-white font-serif font-medium text-xs md:text-sm lg:text-base capitalize my-0 lg:mx-4 mx-1 cursor-pointer'>
-            <Link href='/'>Home</Link>
+            <Link href='#home'>Home</Link>
           </p>
           <p className='text-white font-serif font-medium text-xs md:text-sm lg:text-base capitalize my-0 lg:mx-4 mx-1 cursor-pointer'>
-            <Link href='/whatGPT3'>What is GPT?</Link>
+            <Link href='#what'>What is GPT?</Link>
           </p>
           <p className='text-white font-serif font-medium text-xs md:text-sm lg:text-base capitalize my-0 lg:mx-4 mx-1 cursor-pointer'>
-            <Link href='/possibility'>Open AI</Link>
+            <Link href='#possibility'>Open AI</Link>
           </p>
           <p className='text-white font-serif font-medium text-xs md:text-sm lg:text-base capitalize my-0 lg:mx-4 mx-1 cursor-pointer'>
-            <Link href='/features'>Case Studies</Link>
+            <Link href='#features'>Case Studies</Link>
           </p>
           <p className='text-white font-serif font-medium text-xs md:text-sm lg:text-base capitalize my-0 lg:mx-4 mx-1 cursor-pointer'>
-            <Link href='/blog'>Library</Link>
+            <Link href='#blog'>Library</Link>
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      <div className='md:hidden'>
+      <div className='md:hidden cursor-pointer'>
         {toggleMenu 
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
           : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
